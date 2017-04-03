@@ -32,7 +32,7 @@
     header, footer, .container { max-width: 45em; margin: 0 auto; }
 
     header { padding: 0 0.5em; color: #C90B0B; }
-    header img { border-radius: 40px; float: left; }
+    header img { border-radius: 100%; float: left; width: 5em; }
     header p { font-size:1.5em; font-weight: bold; padding-left: 4em;}
     header p span { font-size: 0.8em; font-weight: normal;}
 
@@ -52,7 +52,7 @@
     }
     footer span { float: right; font-style: italic; }
     </style>
-    <link href="css/style.css" rel="stylesheet" media="only screen and (max-width: 480px)">
+    <link href="css/style.css" rel="stylesheet" media="screen and (max-width: 480px)">
     <link href="css/print.css" rel="stylesheet" media="print">
 
     <script src="http://www.google-analytics.com/analytics.js" async></script>
@@ -91,26 +91,25 @@
           </li>
 
           <li>
-            <img style="width: 100px;" src="views/images/pizzeria.jpg">
+            <img style="width: 100px;" src="views/images/pizzeria-q30.jpg">
             <a href="views/pizza.html">Cam's Pizzeria</a>
             <p>Who wants a performant pizza?</p>
           </li>
         </ul>
       </div>
-
-      <script>
-      (function(w,g){w['GoogleAnalyticsObject']=g;
-      w[g]=w[g]||function(){(w[g].q=w[g].q||[]).push(arguments)};w[g].l=1*new Date();})(window,'ga');
-
-      // Optional TODO: replace with your Google Analytics profile ID.
-      ga('create', 'UA-XXXX-Y');
-      ga('send', 'pageview');
-      </script>
       <footer>
         <p>&copy; Web Performance 2017 <span id="crp-stats"></span></p>
       </footer>
     </div>
     <!-- Like 90% of the time loading CSS is this font -->
     <link href="//fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <script>
+    (function(w,g){w['GoogleAnalyticsObject']=g;
+    w[g]=w[g]||function(){(w[g].q=w[g].q||[]).push(arguments)};w[g].l=1*new Date();})(window,'ga');
+
+    // Optional TODO: replace with your Google Analytics profile ID.
+    ga('create', 'UA-XXXX-Y');
+    ga('send', 'pageview');
+    </script>
   </body>
 </html>
